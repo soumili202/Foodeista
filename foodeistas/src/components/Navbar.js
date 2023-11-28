@@ -1,15 +1,29 @@
+
 import React from 'react';
+import { useRef } from 'react';
+import {FaBars, FaTimes} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import './Navstyles.css';
 export const Navbar = () => {
-    return <nav className="nav">
-        <a href="/" className="nav__title">Foodie</a>
+    const navref= useRef();
+    const showNav = () => {
+        navref.current.classList.toggle('nav-show');
+    }
+    return <header>
+    
+    <nav className="nav" ref={navref}>
+        <h1 className="logo">Foodie</h1>
+        
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Restaurants</a></li>
-            <li><a href="#">Contact</a></li>
+            <Link to="/"><li>Home</li></Link>
+            <Link to="/about"><li>About</li></Link>
+            <Link to="/restaurants"><li>Restaurants</li></Link>
+            <Link to="/contact"><li>Contact</li></Link>
         </ul>
+        
     </nav>
+    
+    </header>
 
 
 }

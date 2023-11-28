@@ -1,5 +1,6 @@
 
 import './App.css';
+import React from 'react';
 import {Navbar} from './components/Navbar';
 import {About} from './components/pages/About';
 import {Contact} from './components/pages/Contact';
@@ -10,18 +11,13 @@ import {Route,Routes} from 'react-router-dom';
 
 function App() {
   return (
+    <React.Fragment>
     <div className="App">
       <Navbar/>
      
-     <div className= "container">
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/restaurants" element= {<Restaurants/>} />
-        <Route path="/contact" element={<Contact/>} />
-      </Routes>
-      </div>
+     
     </div>
+    </React.Fragment>
   );
 }
 

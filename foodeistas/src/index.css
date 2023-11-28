@@ -5,6 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0,0,0,0.6);
+ background-image: url("https://menu.velasresorts.com/wp-content/uploads/2021/10/gst-background-placeholder-1-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
 }
 
 code {
