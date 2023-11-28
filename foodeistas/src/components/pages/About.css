@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    
+    .About {
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        color: rgb(190, 20, 20);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: 69px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 1s ease;
+        gap: 50px;
+        display: flex;
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .About h1 {
+        font-size: 69px;
+        font-weight: 900;
+        color: #dceb05;
+        text-decoration: none;
+        margin: 0 auto; /* Added this line */
+    }
+    

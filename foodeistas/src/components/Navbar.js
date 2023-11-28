@@ -15,10 +15,10 @@ export const Navbar = () => {
         <h1 className="logo">Foodie</h1>
         
         <ul>
-            <Link to="/"><li>Home</li></Link>
-            <Link to="/about"><li>About</li></Link>
-            <Link to="/restaurants"><li>Restaurants</li></Link>
-            <Link to="/contact"><li>Contact</li></Link>
+            <Link to="/" className="x"><li>Home</li></Link>
+            <Link to="/about" className="x"><li>About</li></Link>
+            <Link to="/restaurants" className="x"><li>Restaurants</li></Link>
+            <Link to="/contact" className="x"><li>Contact</li></Link>
         </ul>
         
     </nav>
